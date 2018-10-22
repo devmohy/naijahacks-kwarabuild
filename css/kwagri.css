@@ -1,0 +1,1361 @@
+/*------------------------------------------------------------------
+    Control Stylesheet
+    Project:        Kwagri
+    Version:        1.0
+    Author:         Kwarabuuild
+    Primary use:    Naija Hacks Hackaton, Three Page
+-------------------------------------------------------------------*/
+
+/* -------------------------------------
+General Style
+-------------------------------------- */
+
+body {
+    color: #727272;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    background: #fff;
+}
+
+html,
+body {
+    height: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0px;
+    margin-top: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    font-weight: 400;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section-padding {
+    padding: 60px 0
+}
+
+/*START SECTION TITLE DESIGN*/
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:480px) {
+    .section-title h2 {
+        font-size: 30px;
+    }
+}
+
+.section-title span {
+    background: #4CAF50;
+    height: 10px;
+    width: 70px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-title-white {
+    color: #fff;
+    position: relative;
+}
+
+.section-title p {
+    padding: 0 10px;
+    width: 60%;
+    margin: auto;
+}
+
+@media only screen and (max-width:480px) {
+    .section-title p {
+        padding: 0 10px;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/*END SECTION TITLE DESIGN*/
+
+/*START SCROLL TO TOP*/
+
+.topcontrol {
+    background: #4CAF50 none repeat scroll 0 0;
+    border-radius: 30px;
+    bottom: 5px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    line-height: 45px;
+    opacity: 1;
+    position: fixed;
+    right: 5px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 50px;
+}
+
+.topcontrol:hover {
+    background: #222;
+    color: #fff;
+}
+
+/*END SCROLL TO TOP*/
+
+/* ---------------------------------
+Ends of General Style
+----------------------------------- */
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.START BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+
+.navbar-fixed nav.bg-faded {
+    background-color: transparent;
+    transition: all 0.5s ease 0s;
+}
+
+@media only screen and (max-width:480px) {
+    .bg-faded {
+        background: rgba(0, 0, 0, 0.9);
+    }
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-fixed nav.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    padding: 7px 14px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-fixed nav.navbar-light .navbar-fixed nav.navbar-nav .nav-link:focus,
+.navbar-fixed nav.navbar-light .navbar-fixed nav.navbar-nav .nav-link:hover {
+    color: #4CAF50 !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .open>.nav-link {
+    color: #4CAF50 !important;
+}
+
+.navbar-fixed nav.navbar-light .navbar-fixed nav.navbar-toggler {
+    border-color: #fff;
+    border-radius: 0px;
+}
+
+.navbar-fixed nav.navbar-light .navbar-toggler {
+    float: right;
+    margin: 14px;
+}
+
+header .navbar-fixed nav.navbar-light .navbar-toggler i {
+    color: #666 !important;
+}
+
+.site-navigation {
+    border-radius: 0px;
+}
+
+header .nav-wrapper.container {
+    width: 85%;
+}
+
+.navbar-fixed {
+    z-index: 99999;
+    position: fixed;
+    opacity: .98;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    -webkit-animation: fadeInDown 800ms;
+    animation: fadeInDown 1000ms;
+    -webkit-backface-visibility: hidden;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav ul a {
+    color: #fff;
+    font-size: 12px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+nav ul a:hover {
+    color: #4CAF50;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+a {
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.START HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.round-btn {
+    border-radius: 5rem;
+    margin-right: 1rem;
+    background: #4CAF50 none repeat scroll 0 0;
+    transition: all 0.3s ease 0s;
+    border: 2px solid #4CAF50;
+}
+
+.round-btn:hover {
+    background: none repeat scroll 0 0;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: 0;
+}
+
+/* .btn-home-bg{
+background: #4CAF50 none repeat scroll 0 0;
+border: 2px solid #4CAF50;
+border-radius: 100px;
+color: #fff;
+font-size: 12px;
+padding: 15px 35px;
+text-transform: uppercase;
+transition: all 0.3s ease 0s;
+}
+.btn-home-bg:hover{
+background:none repeat scroll 0 0;
+border:2px solid #fff;
+color:#fff;
+outline:0;
+} */
+
+.home_parallax {
+    height: 700px;
+    position: relative;
+}
+
+.home_parallax:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+    content: "";
+    left: 0;
+    top: 0;
+}
+
+.hero-text {
+    padding-top: 250px;
+}
+
+.hero-text h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:480px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .slider-info h1 {
+        font-size: 30px;
+    }
+}
+
+.hero-text p {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width:480px) {
+    .hero-text p {
+        color: #fff;
+        margin: auto;
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.END HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.START SERVICE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.our_services {
+    background: #eef1f2 none repeat scroll 0 0;
+    padding-top: 60px;
+}
+
+.our_services .service {
+    background: #fff none repeat scroll 0 0;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 60px;
+    transition: all 0.4s ease 0s;
+}
+
+.icon1 {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+    color: #4CAF50;
+    font-size: 24px;
+    height: 60px;
+    left: 0;
+    line-height: 56px;
+    margin: -30px auto auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    width: 60px;
+}
+
+.service h4 {
+    font-size: 18px;
+    margin: 35px 0 20px;
+    text-transform: uppercase;
+}
+
+.service p {}
+
+/*
+    * ----------------------------------------------------------------------------------------
+    * 04.END SERVICE DESIGN
+    * ----------------------------------------------------------------------------------------
+    */
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 05.START WHY CHOOSE US DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+.why_choose {
+    position: relative;
+    padding: 60px 0;
+}
+
+.why_choose:before {
+    /* background:rgba(0, 0, 0, 0) linear-gradient(rgba(34, 38, 75, 0.1), rgba(34, 38, 75, 0.5)) repeat scroll 0 0; */
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.single-choose {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 30px 20px;
+}
+
+@media only screen and (max-width:480px) {
+    .single-choose {
+        margin-bottom: 60px;
+    }
+}
+
+.single-choose i {
+    background: #4CAF50 none repeat scroll 0 0;
+    border: 1px solid #4CAF50;
+    border-radius: 100px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 24px;
+    height: 60px;
+    left: 0;
+    line-height: 56px;
+    margin: -30px auto auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    width: 60px;
+}
+
+.single-choose h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.single-choose p {}
+
+/*START COUNTER*/
+
+.counter_feature {
+    padding-top: 60px;
+}
+
+.counter_title {}
+
+.counter_title h1 {
+    color: #fff;
+    margin-top: 90px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:768px) {
+    .counter_title h1 {
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+}
+
+.complete-project-area {}
+
+.single-project-complete {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.brnone {
+    border-right: 0px;
+}
+
+@media only screen and (max-width:768px) {
+    .single-project-complete {
+        margin-bottom: 30px;
+    }
+}
+
+.single-project-complete h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.single-project-complete h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+/*END COUNTER*/
+
+/*
+ * ----------------------------------------------------------------------------------------
+ *  06.START SPECIAL PACKAGE DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+.single_package {
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media only screen and (max-width:768px) {
+    .single_package {
+        margin-bottom: 40px
+    }
+}
+
+.package-hover {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 30px;
+    padding-bottom: 0px;
+    background: #4CAF50;
+    transition: all 0.3s ease-in-out;
+}
+
+.single_package:hover .package-hover {
+    bottom: 0px;
+}
+
+.package-hover p {
+    color: #fff;
+}
+
+.package-hover i {
+    color: #fff;
+}
+
+.time_zone {
+    background: #fff;
+    display: block;
+    overflow: hidden;
+    color: #333 !important;
+    padding: 10px;
+}
+
+.team .position-center-center {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.single_package img {
+    width: 100%;
+}
+
+.single_package h5 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.single_package span {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.package-name {
+    background: #4CAF50;
+    bottom: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    left: 0;
+    margin: 0;
+    padding: 25px 20px;
+    position: absolute;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out 0s;
+    width: 100%;
+}
+
+/*
+     * ----------------------------------------------------------------------------------------
+     * 06.END SPECIAL PACKAGE DESIGN
+     * ----------------------------------------------------------------------------------------
+    */
+
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 10.START BLOG DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+
+.blog_section {
+    padding-top: 60px;
+}
+
+.single_blog {
+    padding-bottom: 60px
+}
+
+@media only screen and (max-width:768px) {
+    .single_blog img {
+        height: 330px;
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .single_blog img {
+        height: 300px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .single_blog img {
+        height: 200px;
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .single_blog img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.blog-text {
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin: 45px 0 30px;
+    padding: 15px;
+    position: relative;
+    width: 50%;
+    z-index: 1;
+}
+
+@media only screen and (max-width:480px) {
+    .blog-text {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .blog-text {
+        width: 70%
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .blog-text {
+        width: 80%
+    }
+}
+
+.blog-text h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.blog-text a {
+    color: #202020;
+    font-size: 16px;
+    transition: all 0.2s ease 0s;
+}
+
+.blog-text a:hover {
+    color: #4CAF50
+}
+
+.blog-text p {
+    margin-top: 20px
+}
+
+.blog-photo {
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+.section-content {
+    position: relative;
+    height: 400px;
+}
+
+.section-content:before {
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(34, 38, 75, 0.1), rgba(34, 38, 75, 0.5)) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.section-blog-title {
+    background: #4CAF50 none repeat scroll 0 0;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    padding: 30px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.blog_content {
+    background: #fcfcfc none repeat scroll 0 0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.date {
+    color: #4CAF50;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.blog_content h4 {
+    margin-bottom: 15px;
+}
+
+.blog_content h4 span {
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+.blog_content img {
+    width: 100%;
+}
+
+.blog_content p {
+    margin-top: 20px;
+}
+
+.author_part {
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.single_author {
+    background: #f9f9f9 none repeat scroll 0 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.author_part img {
+    border: 4px solid #4CAF50;
+    border-radius: 100px;
+    float: left;
+    height: 120px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    width: 120px;
+}
+
+.author_part h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.author_part p {
+    margin-bottom: 0
+}
+
+.blog_head_title {
+    border-bottom: 1px solid #eee;
+    margin: 0 0 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.comments_part {
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.single_comment {
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.single_comment_mbnone {
+    margin-bottom: 0px
+}
+
+.single_comment img {
+    border: 4px solid #4CAF50;
+    border-radius: 100px;
+    float: left;
+    height: 120px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    width: 120px;
+}
+
+.single_comment h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.single_comment p {
+    margin-bottom: 0
+}
+
+.comment-box {
+    padding: 0 !important;
+}
+
+/*END BLOG SINGLE PAGE DESIGN*/
+
+/*START BLOG SIDEBAR*/
+
+.blog_sidebar_title {
+    border-bottom: 1px solid #eee;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.search input {
+    border: 1px solid #eee;
+    border-radius: 30px;
+    box-shadow: none;
+    color: #333;
+    height: 45px;
+}
+
+.search input:hover,
+.search input:focus {
+    border: 1px solid #4CAF50;
+    box-shadow: none;
+}
+
+.search,
+.video_post,
+.categories {
+    margin-bottom: 30px
+}
+
+.categories ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.categories ul li {}
+
+.categories ul li a {
+    color: #333;
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+.categories ul li a:hover {
+    color: #4CAF50
+}
+
+.categories ul li a i {
+    margin-right: 10px
+}
+
+.video_post iframe {
+    width: 100%;
+    height: 220px;
+    border: medium none;
+}
+
+.tag a {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.btn-tag-bg {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    outline: medium none;
+    padding: 15px 27px;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+}
+
+.btn-tag-bg:hover,
+.btn-tag-bg:focus {
+    background: #4CAF50;
+    border: 1px solid #4CAF50;
+    color: #fff;
+}
+
+/*END BLOG SIDEBAR*/
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 10.END BLOG DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12.START COMPANY PARTNER LOGO
+* ----------------------------------------------------------------------------------------
+*/
+
+.partner-logo {
+    position: relative;
+    padding: 100px 0;
+}
+
+.partner-logo:before {
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(34, 38, 75, 0.1), rgba(34, 38, 75, 0.5)) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.partner {
+    text-align: center
+}
+
+.partner.owl-theme .owl-controls {
+    display: none !important;
+}
+
+.owl-carousel .owl-item img {
+    border: 1px solid #eee;
+    display: inline-block;
+    width: auto;
+}
+
+/*
+  * ----------------------------------------------------------------------------------------
+  *  12.END COMPANY PARTNER LOGO
+  * ----------------------------------------------------------------------------------------
+  */
+
+/*
+* ----------------------------------------------------------------------------------------
+* 13.START CONTACT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact_area {
+    background: #eef1f2;
+}
+
+.contact {
+    background: #fff;
+    padding: 80px 60px;
+}
+
+.contact input {
+    background: #fff none repeat scroll 0 0;
+    border-color: currentcolor currentcolor #eee;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    color: #333;
+    height: 45px;
+    padding: 10px;
+}
+
+.contact textarea {
+    background: #fff none repeat scroll 0 0;
+    border-color: currentcolor currentcolor #eee;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    border-radius: 3px;
+    box-shadow: none;
+    padding: 10px;
+    color: #333;
+    height: 200px;
+}
+
+.contact input:hover,
+.contact input:focus {
+    border-color: currentcolor currentcolor #4CAF50;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.contact textarea:hover,
+.contact textarea:focus {
+    border-color: currentcolor currentcolor #4CAF50;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.success {
+    background: #fff none repeat scroll 0 0;
+    color: #42c0d9;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact_address {
+    padding-left: 100px;
+    padding-top: 110px;
+}
+
+@media only screen and (max-width:768px) {
+    .contact_address {
+        padding-bottom: 60px;
+        padding-left: 60px;
+        padding-top: 60px;
+    }
+}
+
+.contact_address h3 {
+    margin: 0 0 40px;
+    text-transform: uppercase;
+}
+
+.contact_address ul {
+    list-style: none
+}
+
+.contact_address ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contact_address ul li i {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 30px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    color: #4CAF50;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 20px;
+    text-align: center;
+    width: 45px;
+}
+
+.btn-contact-bg {
+    background: #4CAF50 none repeat scroll 0 0 !important;
+    border: 1px solid #4CAF50 !important;
+    color: #fff !important;
+    font-family: montserrat, sans-serif;
+    font-size: 14px;
+    padding: 10px 30px !important;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+}
+
+.btn-contact-bg:hover,
+.btn-contact-bg:focus {
+    background: #333 !important;
+    border: 1px solid #333 !important;
+    color: #fff;
+}
+
+/*
+    * ----------------------------------------------------------------------------------------
+    * 13.END CONTACT DESIGN
+    * ----------------------------------------------------------------------------------------
+    */
+
+*/ div#map {
+    height: 400px;
+    background: #42c0d9;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 14.START FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.footer {
+    padding: 30px 0;
+}
+
+.footer_social {
+    left: 0;
+    position: absolute;
+    top: 126%;
+    width: 45px;
+    z-index: 999;
+}
+
+@media only screen and (max-width:768px) {
+    .footer_social {
+        display: none;
+    }
+}
+
+.footer_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width:480px) {
+    .footer_social ul {
+        text-align: center;
+    }
+}
+
+.footer_social ul li {
+    display: inline-block
+}
+
+.footer_social ul li a {
+    border-radius: 0px;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    margin: px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 45px;
+}
+
+.footer_social ul li a:hover {
+    background: #425cbb;
+    color: #fff
+}
+
+.f_facebook {
+    background: #3B5998;
+}
+
+.f_twitter {
+    background: #1A90D9;
+}
+
+.f_google {
+    background: #FF5252;
+}
+
+.f_linkedin {
+    background: #0077B5;
+}
+
+.f_youtube {
+    background: #D32322;
+}
+
+.f_skype {
+    background: #1a90d9;
+}
+
+/*END FOOTER SOCIAL DESIGN*/
+
+.copyright p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:768px) {
+    .copyright p {
+        padding-left: 20px;
+    }
+}
+
+/*
+    * ----------------------------------------------------------------------------------------
+    * 14.END FOOTER DESIGN
+    * ----------------------------------------------------------------------------------------
+    */
+
+/* Row */
+
+.row {
+    margin-bottom: 0;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    /* border-radius: .25rem; */
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+/*Back to top*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    display: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px;
+    line-height: 33px;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  .back-to-top {
+    background: #4CAF50;
+  }
+
+  /* Team Section */
+  #team .team-img {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border: 2px solid #f5f5f5;
+    display: inline-block;
+    min-height: 400px;
+    position: relative;
+    width: 100%;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#team .team-img:hover {
+    border: 2px solid #FF5252;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#team .team-img .team-info {
+    margin-top: 20px;
+}
+
+.team-info h4 {
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.team-info h5 {
+    margin: 20px 0;
+}
+
+.team-img .team-info .team-social {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.team-info .team-social li {
+    float: left;
+    padding: 0 10px;
+    text-align: center;
+}
+
+h5 {
+    color: #626262;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fa {
+    color: #4CAF50;
+    font-size: 25px;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
