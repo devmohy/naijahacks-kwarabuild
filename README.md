@@ -13,4 +13,4 @@
 - Step 5 Select your preffered farm product items to order then  click on SEND.
 
 ## Admin Dashboard
- Click on the this link to see all orders made
+ Click on the this link to see all orders made http://bit.ly/KwagricOrders
